@@ -32,17 +32,18 @@ const teaserCardsData = [
 
 function TeaserCard() {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-4 lg:grid-cols-3 gap-6 p-6">
-      {teaserCardsData.map((card, index) => (
-        <motion.div
-        key={card.id}
-        className={`bg-whitePrimary/5 backdrop-blur rounded-2xl shadow-lg overflow-hidden sm:col-span-2 lg:col-span-1 ${
-          index === teaserCardsData.length - 1 ? 'sm:col-start-2' : ''
-        }`}
-        initial={{ y: -50, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 1, delay: index * 0.2 }}
-      >
+    <div className="grid grid-cols-1 sm:grid-cols-4 lg:grid-cols-3 xl:grid-cols-6 gap-6 p-6">
+  {teaserCardsData.map((card, index) => (
+    <motion.div
+      key={card.id}
+      className={`bg-whitePrimary/5 backdrop-blur rounded-2xl shadow-lg overflow-hidden sm:col-span-2 lg:col-span-1 xl:col-span-2
+        ${index === 0 ? 'xl:col-start-2' : ''}
+        ${index === teaserCardsData.length - 1 ? 'sm:col-start-2 xl:row-start-2 xl:col-start-3' : ''}
+      `}
+      initial={{ y: -50, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 1, delay: index * 0.2 }}
+    >
           <img
             src={card.image}
             alt={card.title}
