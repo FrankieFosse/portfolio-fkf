@@ -45,7 +45,7 @@ function Article() {
     <>
       <Return />
       <motion.div
-        className="p-6 max-w-3xl mx-auto text-left bg-blackPrimary/50 backdrop-blur mt-14 sm:rounded-xl"
+        className="p-6 max-w-5xl mx-auto text-left bg-blackPrimary/50 backdrop-blur mt-14 xl:mt-4 sm:rounded-xl"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
@@ -57,7 +57,7 @@ function Article() {
           className="w-full h-auto rounded-lg mb-4"
         />
         <motion.p
-          className="text-whitePrimary/75 font-light mb-4 whitespace-pre-line text-xs"
+          className="text-whitePrimary/75 font-light mb-4 whitespace-pre-line text-xs 2xl:text-sm"
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.8, duration: 0.6 }}

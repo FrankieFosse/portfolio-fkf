@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 @import "tailwindcss";
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     position: relative;
     margin: 0;
@@ -16,6 +20,7 @@ body {
     --color-blackPrimary: #010101;
     --color-whitePrimary: #f5f5f5;
     --color-bluePrimary: #2458f5;
+    --color-greenPrimary: #0c9d29;
 }
 
 .underline-center-expand {

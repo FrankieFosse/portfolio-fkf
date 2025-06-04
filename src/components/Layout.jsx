@@ -1,5 +1,6 @@
 import { Outlet, useLocation } from "react-router";
 import Background from "./Background";
+import Footer from "./Footer";
 
 function Layout() {
 
@@ -10,6 +11,7 @@ function Layout() {
             <main>
                 <Outlet />
             </main>
+            <Footer />
         </div>
     )
 }

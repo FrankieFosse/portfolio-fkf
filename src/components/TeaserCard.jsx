@@ -32,7 +32,12 @@ const teaserCardsData = [
 
 function TeaserCard() {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-4 lg:grid-cols-3 xl:grid-cols-6 gap-6 p-6">
+    <>
+                <h1 className="text-2xl sm:text-4xl font-black bg-gradient-to-r from-greenPrimary to-bluePrimary text-transparent bg-clip-text brightness-200 border-t-1 border-whitePrimary/15 mx-4 lg:mx-24 pt-8"
+            style={{
+                textShadow: "2px 4px 8px rgba(0,0,0,0.5)",
+              }}>PORTFOLIO</h1>
+    <div className="grid grid-cols-1 sm:grid-cols-4 lg:grid-cols-3 xl:grid-cols-6 gap-6 px-4 lg:mx-24 mt-4">
   {teaserCardsData.map((card, index) => (
     <motion.div
       key={card.id}
@@ -51,19 +56,19 @@ function TeaserCard() {
           />
           <div className="p-4">
             <h2 className="text-xl font-bold mb-2">{card.title}</h2>
-            <p className="text-whitePrimary/75 font-light text-xs mb-4 sm:min-h-16">{card.description}</p>
-            <div className="flex flex-row gap-2 items-center justify-between">
+            <p className="text-whitePrimary/75 font-light text-xs mb-4 sm:min-h-16 2xl:mx-24">{card.description}</p>
+            <div className="flex flex-row gap-2 items-center justify-between 2xl:mx-20">
             <a
               href={card.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="underline-center-expand text-xs"
+              className="underline-center-expand text-xs 2xl:text-sm"
             >
               Visit website
             </a>
               <Link
                 to={`/article/${card.id}`}
-                className="inline-flex items-center gap-1 justify-between mt-2 pl-2 pr-0 sm:pl-4 sm:gap-4 py-2 border-3 border-bluePrimary bg-bluePrimary rounded-lg text-sm font-medium duration-150 hover:bg-bluePrimary/75 hover:scale-105 hover:border-3 hover:border-whitePrimary/10"
+                className="inline-flex items-center gap-1 justify-between pl-2 pr-0 sm:pl-4 sm:gap-4 py-2 border-3 border-bluePrimary bg-bluePrimary rounded-lg text-sm 2xl:text-lg font-medium duration-150 hover:bg-bluePrimary/75 hover:scale-105 hover:border-3 hover:border-whitePrimary/10"
               >
                 View Project <MdArrowRight size={24}/>
               </Link>
@@ -72,6 +77,7 @@ function TeaserCard() {
         </motion.div>
       ))}
     </div>
+    </>
   );
 }
 

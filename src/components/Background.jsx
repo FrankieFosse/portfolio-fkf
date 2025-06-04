@@ -8,7 +8,7 @@ function Background() {
     const video = videoRef.current;
 
     if (video) {
-      video.playbackRate = 0.5;
+      video.playbackRate = 1;
 
       const handleCanPlay = () => setVideoLoaded(true);
       video.addEventListener('canplay', handleCanPlay);
