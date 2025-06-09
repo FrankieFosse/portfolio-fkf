@@ -64,17 +64,33 @@ function Article() {
         >
           {article.detailedDescription}
         </motion.p>
-        <motion.a
-          href={article.link}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="underline-center-expand"
+        <motion.div
+          className="flex flex-row justify-between gap-6 mt-4"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.5, duration: 0.5 }}
         >
-          Visit website
-        </motion.a>
+          <a
+            href={article.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline-center-expand"
+          >
+            Visit website
+          </a>
+
+          {article.github && (
+            <a
+              href={article.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline-center-expand text-bluePrimary hover:text-white"
+            >
+              View GitHub
+            </a>
+          )}
+        </motion.div>
+
 
         <motion.div
           className="mt-6"
@@ -85,8 +101,8 @@ function Article() {
           <h2 className="text-xl font-semibold mb-2">
             Reflections & Improvements
           </h2>
-          <p className="text-gray-400">
-            {article.reflections || 'To be added...'}
+          <p className="text-whitePrimary/75 font-light text-xs 2xl:text-sm">
+            {article.reflections}
           </p>
         </motion.div>
       </motion.div>

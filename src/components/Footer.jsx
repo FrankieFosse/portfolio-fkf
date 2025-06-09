@@ -9,7 +9,7 @@ function Footer() {
   };
 
   return (
-    <div className="bg-blackPrimary/50 backdrop-blur h-48 py-4 px-8 justify-between items-center grid grid-cols-3 gap-4 sm:flex flex-row text-xs sm:text-sm lg:text-lg lg:px-24">
+    <div className="bg-blackPrimary/50 backdrop-blur h-48 py-4 px-8 justify-between items-center grid grid-cols-3 gap-4 sm:flex flex-row text-xs sm:text-sm lg:text-lg lg:px-24 mt-4">
       {/* Left Section */}
       <div className="text-left space-y-1 col-start-1">
         <Link to="/" className="hover:text-bluePrimary duration-150 flex flex-row items-center gap-2"><GoHome size={24} className="hidden sm:flex"/>Home</Link>
@@ -18,7 +18,7 @@ function Footer() {
       {/* Middle Section */}
       <div className="flex flex-row gap-2 items-end justify-end col-start-3">
         <a
-          href="https://github.com/yourusername"
+          href="https://github.com/FrankieFosse"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-bluePrimary duration-150"
@@ -26,7 +26,7 @@ function Footer() {
           <FaGithub size={24} />
         </a>
         <a
-          href="https://linkedin.com/in/yourusername"
+          href="https://www.linkedin.com/in/frank-kristian-fosse-a432b3180/"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-bluePrimary duration-150"
