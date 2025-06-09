@@ -14,7 +14,7 @@ function Profile() {
             </div>
               <div className="xl:w-1/3 flex flex-col justify-center items-center">
             <img src="/images/profile.png" 
-                 className="absolute h-48 top-48 object-cover top-0 brightness-90 sm:h-64 sm:top-32 sm:left-24 xl:left-0 xl:h-96 xl:top-0 xl:left-54"
+                 className="absolute h-48 top-48 object-cover top-0 brightness-90 sm:h-64 sm:top-32 sm:left-24 xl:left-0 xl:h-96 xl:top-0 xl:left-54 2xl:left-108"
             />
             </div>
 
